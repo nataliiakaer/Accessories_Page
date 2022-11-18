@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./sass/accessories.css" />
+  </head>
+  <body>
+    <main>
+      <section class="accessories section">
+        <div class="container accessories_container">
+          <div class="buttons">
+            <ul class="buttons__list list">
+              <li class="buttons__item">
+                <button class="buttons__btn btn" type="button">All</button>
+              </li>
+              <li class="buttons__item">
+                <button class="buttons__btn btn" type="button">Headsets</button>
+              </li>
+              <li class="buttons__item">
+                <button class="buttons__btn btn" type="button">
+                  Keyboards
+                </button>
+              </li>
+              <li class="buttons__item">
+                <button class="buttons__btn btn" type="button">Mouses</button>
+              </li>
+            </ul>
+          </div>
+          <div class="all-accessories">
+            <h2 class="all-accessories__title">All accessories</h2>
+            <ul class="cards list">
+              <li class="cards__item">
+                <a class="cards__link">
+                  <div class="cover-container">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/accessories/XiberiaK9PROPC-1x.jpg 1x,
+                          ./images/accessories/XiberiaK9PROPC-2x.jpg 2x
+                        "
+                        media="(min-width: 1200px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/screen-laptop-tab-1x.jpg 1x,
+                          ./images/portfolio/screen-laptop-tab-2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/screen-laptop-mob-1x.jpg 1x,
+                          ./images/portfolio/screen-laptop-mob-2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        class="cover-container__image"
+                        src="./images/accessories/XiberiaK9PROPC-1x.jpg"
+                        alt="Xiberia K9 PRO PC Headset"
+                        width="285"
+                        height="276"
+                      />
+                    </picture>
+                    <p class="cover-container__text">
+                      100% Brand new and high quality!<br />
+                      Ergonomic in design makes it more adjustable to use.<br />
+                      More fashionable for your daily use, such as playing
+                      games.<br /><br />
+                      Built-in high sensitivity and noise reduction
+                      microphone.<br /><br />
+                      It is not easy to break or deform, and wear comfortable,
+                      no pressure.
+                    </p>
+                  </div>
+                  <div class="card-contant">
+                    <h2 class="card-contant__title">
+                      Xiberia K9 PRO PC Headset
+                    </h2>
+                    <p class="card-contant__text">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
