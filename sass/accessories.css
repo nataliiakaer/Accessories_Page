@@ -96,10 +96,35 @@ body {
   background-color: #043835;
   padding: 40px 0;
   display: list-item;
+  background-image: url(../images/accessories/accessories-bg-mob-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .accessories {
+    background-image: url(../images/accessories/accessories-bg-mob-2x.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .accessories {
     padding: 120px 0;
+    background-image: url(../images/accessories/accessories-bg-tab-1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .accessories {
+    background-image: url(../images/accessories/accessories-bg-tab-2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .accessories {
+    background-image: url(../images/accessories/accessories-bg-1x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .accessories {
+    background-image: url(../images/accessories/accessories-bg-2x.jpg);
   }
 }
 
@@ -148,6 +173,7 @@ body {
   background-color: inherit;
   border-radius: 16px;
   border: 1px solid #86e543;
+  cursor: pointer;
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -175,7 +201,6 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.1666666667;
-  margin-bottom: 27px;
   color: #ffffff;
 }
 @media screen and (min-width: 768px) {
@@ -183,7 +208,6 @@ body {
     margin-left: 102px;
     font-size: 56px;
     line-height: 1.1785714286;
-    margin-bottom: 51px;
   }
 }
 
@@ -343,7 +367,11 @@ body {
 
 .card-contant {
   width: 100%;
-  padding: 8px 16px 8px 8px;
+  padding: 8px 0 12px 0;
+}
+
+.card-contant__container {
+  padding: 0 0 8px 8px;
 }
 
 .card-contant__title {
@@ -354,6 +382,7 @@ body {
   font-size: 22px;
   line-height: 1.1818181818;
   color: #86e543;
+  max-width: 261px;
 }
 
 .card-price {
@@ -473,4 +502,7 @@ body {
   100% {
     width: 16px;
   }
+}
+.line-desk {
+  margin-bottom: 24px;
 }/*# sourceMappingURL=accessories.css.map */
