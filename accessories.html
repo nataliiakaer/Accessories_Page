@@ -19,33 +19,48 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./sass/accessories.css" />
   </head>
   <body>
     <main>
       <section class="accessories section">
         <div class="container accessories_container">
-          <div class="buttons">
-            <ul class="buttons__list list">
+          <div class="buttons" id="tabs-1">
+            <ul class="buttons__list list" data-controls>
               <li class="buttons__item">
-                <button class="buttons__btn btn" type="button">All</button>
+                <button class="buttons__btn btn" type="button" href="#all">
+                  All
+                </button>
               </li>
               <li class="buttons__item">
-                <button class="buttons__btn btn" type="button">Headsets</button>
+                <button class="buttons__btn btn" type="button" href="#headsets">
+                  Headsets
+                </button>
               </li>
               <li class="buttons__item">
-                <button class="buttons__btn btn" type="button">
+                <button
+                  class="buttons__btn btn"
+                  type="button"
+                  href="#keyboards"
+                >
                   Keyboards
                 </button>
               </li>
               <li class="buttons__item">
-                <button class="buttons__btn btn" type="button">Mouses</button>
+                <button class="buttons__btn btn" type="button" href="#mouses">
+                  Mouses
+                </button>
               </li>
             </ul>
           </div>
           <div class="all-accessories">
             <h2 class="all-accessories__title">All accessories</h2>
+            <!-- <svg class="features__icon" width="100%" height="16">
+          <use href="../images/accessories/sale_line_top_mob.svg"></use>
+        </svg>
+        <svg class="features__icon" width="100%" height="16">
+          <use href="../images/accessories/sale_line_bottom_mob.svg"></use>
+        </svg> -->
             <!-- <svg height="180" width="500">
           <polyline
             points="0,40 40,40 40,80 80, 80"
@@ -56,8 +71,8 @@
           <hr class="line1" />
           <hr class="line2" />
         </div> -->
-            <ul class="cards list">
-              <li class="cards__item">
+            <ul class="cards list" data-cards>
+              <li class="cards__item" id="headsets">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -138,7 +153,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="headsets all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -220,7 +235,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="mouses all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -247,7 +262,7 @@
                       />
                       <img
                         class="cover-container__image"
-                        src="./images/accessories/XiberiaK9PROPC-1x.jpg"
+                        src="./images/accessories/Malloom1200DPI2_4GhzWirelessMouse-1x.jpg"
                         alt="Malloom 1200 DPI 2.4Ghz Wireless Mouse"
                         width="285"
                         height="276"
@@ -301,7 +316,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="keyboards all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -382,7 +397,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="headsets all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -463,7 +478,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="keyboards all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -544,7 +559,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="mouses all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -625,7 +640,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="keyboards all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -652,7 +667,7 @@
                       />
                       <img
                         class="cover-container__image"
-                        src="./images/accessories/XiberiaK9PROPC-1x.jpg"
+                        src="./images/accessories/K569RGB_LED_BacklitMechanicalKeyboard-1x.jpg"
                         alt="K569 RGB LED Backlit Mechanical Keyboard"
                         width="285"
                         height="276"
@@ -706,7 +721,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="keyboards all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -787,7 +802,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="headsets all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -868,7 +883,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="headsets all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -949,7 +964,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="headsets all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -1030,7 +1045,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="mouses all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -1111,7 +1126,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="mouses all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -1192,7 +1207,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="headsets all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -1273,7 +1288,7 @@
                   </div>
                 </a>
               </li>
-              <li class="cards__item">
+              <li class="cards__item" id="keyboards all">
                 <a class="cards__link link" href="./take_order.html">
                   <div class="cover-container">
                     <picture class="picture">
@@ -1355,14 +1370,18 @@
                 </a>
               </li>
             </ul>
-            <hr />
-            <button type="button" class="button__gallery"></button>
-            <button
-              type="button"
-              class="button__gallery button__gallery-selected"
-            ></button>
+            <div class="points-container">
+              <ul class="points__list">
+                <li class="points__item"><span class="point"></span></li>
+                <li class="points__item"><span class="point"></span></li>
+                <li class="points__item"><span class="point"></span></li>
+                <li class="points__item"><span class="point"></span></li>
+                <li class="points__item"><span class="point"></span></li>
+              </ul>
+            </div>
           </div>
         </div>
+        <script src="./partials/accessories-btn.js"></script>
       </section>
     </main>
   </body>
